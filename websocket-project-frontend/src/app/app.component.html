@@ -1,0 +1,52 @@
+<nb-layout>
+  <nb-layout-header>
+    <span class="pl-3">
+      Real-time chat application using
+      <span class="bolder-text">&nbsp;Spring web-socket&nbsp;</span>and
+      <span class="bolder-text">Angular.</span>
+    </span>
+  </nb-layout-header>
+
+  <nb-layout-column>
+    <nb-card class="m-3">
+      <nb-card-body>
+        <div class="row justify-content-center">
+          <div class="col-md-8">
+            Please enter your username :
+            <input
+              type="text"
+              [(ngModel)]="username"
+              nbInput
+              placeholder="username"
+              [disabled]="isReady"
+            />
+            <button
+              (click)="chat()"
+              [disabled]="isReady || username == ''"
+              class="ml-4 mb-1"
+              nbButton
+              status="primary"
+            >
+              Start
+            </button>
+          </div>
+          <div class="col-md-4"></div>
+        </div>
+      </nb-card-body>
+    </nb-card>
+    <!-- Display the chat component and pass the username, theme, and avatar as input for the chat session -->
+    <app-chat
+      *ngIf="isReady"
+      [username]="username"
+      [theme]="selectedTheme"
+      [avatar]="selectedAvatar"
+    ></app-chat>
+  </nb-layout-column>
+
+  <nb-layout-footer>
+    Made by &nbsp;
+    <a href="https://www.linkedin.com/in/hselmi/" target="_blank">
+      Houssem Selmi </a
+    >&nbsp;✏️</nb-layout-footer
+  >
+</nb-layout>

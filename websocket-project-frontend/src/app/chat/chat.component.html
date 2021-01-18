@@ -1,0 +1,16 @@
+<div class="row justify-content-center">
+  <div class="col-md-12">
+    <nb-chat [title]="username" size="medium" [status]="theme">
+      <nb-chat-message
+        *ngFor="let message of chatService.messages"
+        [message]="message.text"
+        [reply]="message.user.name == this.username"
+        [sender]="message.user.name"
+        [date]="message.date"
+        [avatar]="message.user.avatar"
+      ></nb-chat-message>
+      <nb-chat-form (send)="sendMessage($event, avatar)" [showButton]="true">
+      </nb-chat-form>
+    </nb-chat>
+  </div>
+</div>
