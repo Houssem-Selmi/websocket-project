@@ -84,6 +84,12 @@ Now you should see the application running in your browser, type a username and 
 
 <img src="https://firebasestorage.googleapis.com/v0/b/booki-26bbf.appspot.com/o/chat_speed.gif?alt=media&token=ffe80fa7-438a-43e4-9a01-cdc78dca0500">
 
+### Support the post 💪 (optional) 
+If you find this project useful, please support it for free by giving it a star ⭐. 
+Alternatively, here's another option to support the project: 
+
+<a href="https://www.buymeacoffee.com/hselmi"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=&slug=hselmi&button_colour=FFDD00&font_colour=000000&font_family=Lato&outline_colour=000000&coffee_colour=ffffff" /></a>
+
  ### Congrats 👏 🎉 
 **Now everything is set up correctly and you can start exploring the real-time chat application 💬** 
 
